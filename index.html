@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/b77f9cd16e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-gray-50 mx-auto mt-10 max-w-4xl">
+    <navbar>
+        <img src="imgcc.jpg" alt="logo" class="w-36 flex mx-auto">
+      <div
+        class="p-5 bg-blue-600 rounded-full text-white flex items-center justify-between shadow-lg border"
+      >
+        <div class="flex">Find Records</div>
+        <div class="flex">
+          <i class="fa-solid fa-xmark cursor-pointer"></i>
+        </div>
+      </div>
+    </navbar>
+    <main>
+      <section>
+        <div class="container mx-auto max-w-4xl flex py-2 mt-5">
+          <div
+            class="bg-white items-center justify-between w-full flex rounded-full shadow-lg p-2 px-6 border-gray-500 border"
+          >
+            <div class="relative h-10 w-72 min-w-[200px]">
+              <select
+                class="peer h-full w-full rounded-[7px] border border-blue-gray-200 border-t-transparent bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 empty:!bg-gray-900 focus:border-2 focus:border-gray-900 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
+              >
+                <option value="brazil">Date Wise</option>
+                <option value="bucharest">Truck No. Wise</option>
+                <option value="london">Material Wise</option>
+                <option value="washington">Customer Wise</option>
+                <option value="washington">Supplier Wise</option>
+              </select>
+              <label
+                class="before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none text-[11px] font-normal leading-tight text-blue-gray-400 transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tl-md before:border-t before:border-l before:border-blue-gray-200 before:transition-all after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tr-md after:border-t after:border-r after:border-blue-gray-200 after:transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[3.75] peer-placeholder-shown:text-blue-gray-500 peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-gray-900 peer-focus:before:border-t-2 peer-focus:before:border-l-2 peer-focus:before:border-gray-900 peer-focus:after:border-t-2 peer-focus:after:border-r-2 peer-focus:after:border-gray-900 peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500"
+              >
+                Select a WeighBridge
+              </label>
+            </div>
+            <div class="relative h-10 w-52 min-w-[100px]">
+              <input
+                class="peer h-full w-full rounded-[7px] border border-blue-gray-200 border-t-transparent bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-gray-900 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 cursor-pointer"
+                type="date"
+                placeholder="Start Date"
+              />
+              <label
+                class="before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none text-[11px] font-normal leading-tight text-blue-gray-400 transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tl-md before:border-t before:border-l before:border-blue-gray-200 before:transition-all after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tr-md after:border-t after:border-r after:border-blue-gray-200 after:transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[3.75] peer-placeholder-shown:text-blue-gray-500 peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-gray-900 peer-focus:before:border-t-2 peer-focus:before:border-l-2 peer-focus:before:border-gray-900 peer-focus:after:border-t-2 peer-focus:after:border-r-2 peer-focus:after:border-gray-900 peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500"
+              >
+                Start Date
+              </label>
+            </div>
+            <div class="relative h-10 w-52 min-w-[100px]">
+              <input
+                class="peer h-full w-full rounded-[7px] border border-blue-gray-200 border-t-transparent bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-gray-900 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 cursor-pointer"
+                type="date"
+                placeholder="End Date"
+              />
+              <label
+                class="before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none text-[11px] font-normal leading-tight text-blue-gray-400 transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tl-md before:border-t before:border-l before:border-blue-gray-200 before:transition-all after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tr-md after:border-t after:border-r after:border-blue-gray-200 after:transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[3.75] peer-placeholder-shown:text-blue-gray-500 peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-gray-900 peer-focus:before:border-t-2 peer-focus:before:border-l-2 peer-focus:before:border-gray-900 peer-focus:after:border-t-2 peer-focus:after:border-r-2 peer-focus:after:border-gray-900 peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500"
+              >
+                End Date
+              </label>
+            </div>
+
+            <div
+              class="bg-gray-600 p-2 hover:bg-blue-600 cursor-pointer mx-2 rounded-full text-white "
+            >
+              <svg
+                class="w-6 h-6"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="relative overflow-x-auto mt-5">
+        <table
+          class="w-full text-sm text-left rtl:text-right text-gray-500 shadow-2xl border"
+        >
+          <thead class="text-xs text-gray-700 uppercase bg-gray-200">
+            <tr>
+              <th scope="col" class="px-12 py-3 text-nowrap">SL. No.</th>
+              <th scope="col" class="px-12 py-3 text-nowrap">Truck No.</th>
+              <th scope="col" class="px-12 py-3 text-nowrap">Chalan No.</th>
+              <th scope="col" class="px-12 py-3 text-nowrap">Source</th>
+              <th scope="col" class="px-12 py-3 text-nowrap">Material Name</th>
+              <th scope="col" class="px-12 py-3 text-nowrap">Customer Name</th>
+              <th scope="col" class="px-12 py-3 text-nowrap">Supplier Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-white">
+              <td class="px-6 py-4"></td>
+              <td class="px-6 py-4"></td>
+              <td class="px-6 py-4"></td>
+              <td class="px-6 py-4"></td>
+              <td class="px-6 py-4"></td>
+              <td class="px-6 py-4"></td>
+              <td class="px-6 py-4"></td>
+            </tr>
+            <tr class="bg-white">
+              <td class="px-6 py-4"></td>
+              <td class="px-6 py-4"></td>
+              <td class="px-6 py-4"></td>
+              <td class="px-6 py-4"></td>
+              <td class="px-6 py-4"></td>
+              <td class="px-6 py-4"></td>
+              <td class="px-6 py-4"></td>
+            </tr>
+            <tr class="bg-white">
+              <td class="px-6 py-4"></td>
+              <td class="px-6 py-4"></td>
+              <td class="px-6 py-4"></td>
+              <td class="px-6 py-4"></td>
+              <td class="px-6 py-4"></td>
+              <td class="px-6 py-4"></td>
+              <td class="px-6 py-4"></td>
+            </tr>
+            <tr class="bg-white">
+              <td class="px-6 py-4"></td>
+              <td class="px-6 py-4"></td>
+              <td class="px-6 py-4"></td>
+              <td class="px-6 py-4"></td>
+              <td class="px-6 py-4"></td>
+              <td class="px-6 py-4"></td>
+              <td class="px-6 py-4"></td>
+            </tr>
+            <tr class="bg-white">
+              <td class="px-6 py-4"></td>
+              <td class="px-6 py-4"></td>
+              <td class="px-6 py-4"></td>
+              <td class="px-6 py-4"></td>
+              <td class="px-6 py-4"></td>
+              <td class="px-6 py-4"></td>
+              <td class="px-6 py-4"></td>
+            </tr>
+            <tr class="bg-white">
+              <td class="px-6 py-4"></td>
+              <td class="px-6 py-4"></td>
+              <td class="px-6 py-4"></td>
+              <td class="px-6 py-4"></td>
+              <td class="px-6 py-4"></td>
+              <td class="px-6 py-4"></td>
+              <td class="px-6 py-4"></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
